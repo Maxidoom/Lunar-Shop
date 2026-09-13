@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lunar Shop</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="/img/lunar_shop_png-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+
+  <!-- ANUNCIO DE URGENCIA -->
+  <div class="announce">
+    <span>ENVÍO GRATIS desde $25 · Termina en</span>
+    <span class="timer" id="announceTimer">00:00:00</span>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="nav">
+    <div class="nav-top">
+      <a class="logo" href="#">LUNAR SHOP</a>
+
+      <div class="search-wrap">
+        <input type="text" placeholder="Buscar 'vestido verano', 'zapatillas'...">
+        <button aria-label="Buscar">🔍</button>
+      </div>
+
+      <nav class="nav-icons">
+        <a href="#"><span>👤</span><span class="label">Cuenta</span></a>
+        <a href="#"><span>♡</span><span class="badge" id="wishCount">12</span><span class="label">Favoritos</span></a>
+        <a href="#"><span>🛍️</span><span class="badge" id="cartCount">3</span><span class="label">Carrito</span></a>
+      </nav>
+      <img src="img/lunar_shop_png-removebg-preview.png" alt="logo" class="logo-img">
+    </div>
+
+    <div class="nav-categories">
+      <a href="#" class="sale">🔥 Rebajas</a>
+      <a href="indexjoggers.html">Cargos</a>
+     
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-copy">
+      <span class="kicker">Hasta 80% OFF</span>
+      <h1>La moda no espera</h1>
+      <p>Nuevos drops todos los días. Precios que bajan cada hora. Stock limitado.</p>
+      <a class="cta" href="#productos">Comprar ahora →</a>
+    </div>
+    <div class="hero-visual">👗</div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section>
+    <div class="section-head">
+      <h2>Comprar por categoría</h2>
+    </div>
+    <div class="cat-row">
+      <div class="cat-item"><div class="circle"><a href="joggers.html">👖</a></div><span>cargos</span></div>
+      <div class="cat-item"><div class="circle">👟</div><span>Calzado</span></div>
+      <div class="cat-item"><div class="circle">👜</div><span>Bolsos</span></div>
+      <div class="cat-item"><div class="circle">🕶️</div><span>Accesorios</span></div>
+      <div class="cat-item"><div class="circle">🧥</div><span>Abrigos</span></div>
+      <div class="cat-item"><div class="circle">💍</div><span>Joyería</span></div>
+      <div class="cat-item"><div class="circle">🩱</div><span>Baño</span></div>
+    </div>
+  </section>
+
+  <!-- OFERTA FLASH -->
+  <section>
+    <div class="flash">
+      <h2>⚡ Oferta Flash</h2>
+      <div class="flash-timer" id="flashTimer">
+        <div class="box"><span id="fh">02</span><small>HRS</small></div>
+        <div class="box"><span id="fm">45</span><small>MIN</small></div>
+        <div class="box"><span id="fs">30</span><small>SEG</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos">
+    <div class="section-head">
+      <h2>Recomendados para ti</h2>
+      <a class="see-all" href="#">Ver todo</a>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <!-- PROMOS DOBLES -->
+  <section>
+    <div class="promo-duo">
+      <div class="panel a">
+        <h3>Colección Cápsula</h3>
+        <a class="go" href="#">Explorar →</a>
+      </div>
+      <div class="panel b">
+        <h3>Envío exprés 48h</h3>
+        <a class="go" href="#">Ver condiciones →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" style="max-width:none;">
+    <h2>-10% en tu primera compra</h2>
+    <p>Sumate y sé la primera en enterarte de nuevos drops y ofertas relámpago.</p>
+    <form onsubmit="return false;">
+      <input type="email" placeholder="tu@email.com" required>
+      <button>Suscribirme</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-grid">
+      <div>
+        <h4>AYUDA</h4>
+        <ul>
+          <li><a href="#">Seguimiento de pedido</a></li>
+          <li><a href="#">Envíos y devoluciones</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>SOBRE LUNARA</h4>
+        <ul>
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Sustentabilidad</a></li>
+          <li><a href="#">Trabajá con nosotros</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>SEGUINOS</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>PAGOS</h4>
+        <ul>
+          <li><a href="#">Tarjetas de crédito</a></li>
+          <li><a href="#">Billeteras virtuales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 LUNARA — Proyecto didáctico, no es una tienda real.</span>
+      <span>Términos · Privacidad</span>
+    </div>
+  </footer>
+
+  <!-- POPUP DE PRUEBA SOCIAL EN VIVO -->
+  <div class="live-popup" id="livePopup">
+    <div class="thumb">👗</div>
+    <div>
+      <strong id="popupName">Julieta</strong> de Neuquén acaba de comprar <span id="popupItem">el Vestido Ibiza</span>
+      <div style="color:var(--gray); font-size:11px; margin-top:2px;">hace <span id="popupTime">2</span> minutos</div>
+    </div>
+    <button class="close" onclick="document.getElementById('livePopup').classList.remove('show')">✕</button>
+  </div>
+
+  <!-- INDICADOR DE CARRITO FLOTANTE -->
+  <div class="sticky-cart-hint">
+    <span class="dot"></span> 3 artículos guardados en tu carrito
+  </div>
+<script src="script.js"></script>
+
+
+</body>
+</html>

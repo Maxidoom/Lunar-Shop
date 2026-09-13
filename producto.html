@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pantalón Hip Hop Lino — JOGGERS</title>
+<link rel="stylesheet" href="producto.css">
+</head>
+<body>
+
+<header class="nav">
+    <div class="nav-top">
+      <a class="logo" href="#">LUNAR SHOP</a>
+
+      <div class="search-wrap">
+        <input type="text" placeholder="Buscar 'vestido verano', 'zapatillas'...">
+        <button aria-label="Buscar">🔍</button>
+      </div>
+
+      <nav class="nav-icons">
+        <a href="#"><span>👤</span><span class="label">Cuenta</span></a>
+        <a href="#"><span>♡</span><span class="badge" id="wishCount">12</span><span class="label">Favoritos</span></a>
+        <a href="#"><span>🛍️</span><span class="badge" id="cartCount">3</span><span class="label">Carrito</span></a>
+      </nav>
+      <img src="img/lunar_shop_png-removebg-preview.png" alt="logo" class="logo-img">
+    </div>
+
+    <div class="nav-categories">
+      <a href="index .html" class="sale">🔥 Rebajas</a>
+      <a href="indexjoggers.html">Cargos</a>
+     
+    </div>
+  </header>
+
+  <div class="crumb-bar">
+    <a href="#">Inicio</a> / <a href="joggers.html">Cargos</a> / <span>JOGGS Baggy Cargo Gris</span>
+  </div>
+
+  <main class="pdp">
+
+    <!-- ---------- GALERÍA DE IMÁGENES ---------- -->
+    <section class="gallery">
+      <div class="thumbs" id="thumbs">
+        <button class="thumb active" data-index="0"><img src="./img/GRIS-TOPO-1-690e6aa640c00.webp" alt="Vista 1"></button>
+        <button class="thumb" data-index="1"><img src="./img/GRIS-TOPO-2-690e6aa69f205.webp" alt="Vista 2"></button>
+        <button class="thumb" data-index="2"><img src="./img/GRIS-TOPO-3-690e6aa69b977.webp" alt="Vista 3"></button>
+
+      </div>
+
+      <div class="main-image">
+        <button class="wish-btn-big" aria-label="Agregar a favoritos">♡</button>
+        <span class="tag-off">-45%</span>
+        <img id="mainImg" src="./img/GRIS-TOPO-1-690e6aa640c00.webp" alt="Pantalón Hip Hop de Lino — imagen principal">
+      </div>
+    </section>
+
+    <!-- ---------- INFO DEL PRODUCTO ---------- -->
+    <section class="info">
+      <h1>JOGGS Baggy Cargo Gris</h1>
+
+      <div class="rating-row">
+        <span class="stars">★★★★☆</span>
+        <span class="rating-num">4.3</span>
+        <a href="#reviews" class="rating-count">(2,847 reseñas)</a>
+        <span class="sold">· 10 mil+ vendidos</span>
+      </div>
+
+      <div class="price-row">
+        <span class="price-now">$18.999</span>
+        <span class="price-old">$34.999</span>
+        <span class="price-off">-45%</span>
+      </div>
+
+      <div class="promo-box">
+        <span class="promo-chip">3x2 en toda la sección</span>
+        <span class="promo-chip">Envío gratis desde $25.000</span>
+      </div>
+
+      <!-- Color -->
+      <div class="option-block">
+        <div class="option-label">Color: <strong id="colorLabel">Verde Militar</strong></div>
+        <div class="swatches" id="colorSwatches">
+          <button class="swatch" style="background:#5c6b45" data-color="Verde Militar" aria-label="Verde Militar"></button>
+          <button class="swatch" style="background:#1a1a1a" data-color="Negro" aria-label="Negro"></button>
+          <button class="swatch" style="background:#c2b280" data-color="Beige" aria-label="Beige"></button>
+          <button class="swatch" style="background:#2f3a4a" data-color="Azul Marino" aria-label="Azul Marino"></button>
+        </div>
+      </div>
+
+      <!-- Talle -->
+      <div class="option-block">
+        <div class="option-label">
+          Talle: <strong id="sizeLabel">Elegí un talle</strong>
+          <a href="#" class="size-guide">Guía de talles</a>
+        </div>
+        <div class="sizes-row" id="sizeButtons">
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+          <button class="size-btn">XXL</button>
+        </div>
+      </div>
+
+      <!-- Cantidad -->
+      <div class="option-block">
+        <div class="option-label">Cantidad</div>
+        <div class="qty-stepper">
+          <button id="qtyMinus">−</button>
+          <span id="qtyValue">1</span>
+          <button id="qtyPlus">+</button>
+        </div>
+        <span class="stock-msg" id="stockMsg">Últimas 7 unidades</span>
+      </div>
+
+      <!-- Acciones -->
+      <div class="actions">
+        <button class="btn-cart" id="addCartBtn">Agregar al carrito</button>
+        <button class="btn-buy" id="buyNowBtn">Comprar ahora</button>
+      </div>
+      <p class="form-feedback" id="formFeedback"></p>
+
+      <!-- Envío -->
+      <div class="shipping-box">
+        <div class="shipping-row"><span>🚚</span> Envío estimado: 3–7 días hábiles</div>
+        <div class="shipping-row"><span>↩️</span> Devolución gratuita dentro de los 30 días</div>
+        <div class="shipping-row"><span>🔒</span> Pago 100% seguro</div>
+      </div>
+
+      <!-- Detalles del producto -->
+      <details class="accordion" open>
+        <summary>Detalles del producto</summary>
+        <p>Cargo JOGGS, corte super holgado y recto.
+
+Un pantalón súper cómodo. Con cintura elastizada y cordón.
+
+Posee dos bolsillos delanteros, dos traseros y dos laterales.
+
+Color Gris.
+
+Premium %98 Algodón %2 Elastano
+
+</p>
+      </details>
+
+      <details class="accordion">
+        <summary>Guía de talles</summary>
+        <div class="size-table-wrap">
+          <table class="size-table">
+            <thead>
+              <tr><th>Talle</th><th>Cintura (cm)</th><th>Cadera (cm)</th><th>Largo (cm)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>S</td><td>70–74</td><td>92–96</td><td>98</td></tr>
+              <tr><td>M</td><td>75–79</td><td>97–101</td><td>99</td></tr>
+              <tr><td>L</td><td>80–84</td><td>102–106</td><td>100</td></tr>
+              <tr><td>XL</td><td>85–89</td><td>107–111</td><td>101</td></tr>
+              <tr><td>XXL</td><td>90–94</td><td>112–116</td><td>102</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <!-- ---------- RESEÑAS ---------- -->
+  <section class="reviews-section" id="reviews">
+    <div class="reviews-head">
+      <h2>Reseñas de clientes</h2>
+      <div class="reviews-summary">
+        <span class="big-rating">4.3</span>
+        <div>
+          <div class="stars">★★★★☆</div>
+          <div class="rating-count">Basado en 2,847 reseñas</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-cards">
+      <div class="review-card">
+        <div class="thumb-photo"><img src="./img/GRIS-TOPO-2-690e6aa69f205.webp" alt="Foto de reseña de cliente"></div>
+        <div class="stars">★★★★★</div>
+        <p>Mu comodo, ideal para usar en todos lados. El talle vino como esperaba.</p>
+        <div class="who">Martina R. — hace 5 días</div>
+      </div>
+      <div class="review-card">
+        <div class="thumb-photo"><img src="./img/images (3).jpeg" alt="Foto de reseña de cliente"></div>
+        <div class="stars">★★★★☆</div>
+        <p>Buena calidad para el precio, el color es un poco más oscuro que en la foto.</p>
+        <div class="who">Nicolás G. — hace 2 semanas</div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ---------- RECOMENDADOS ---------- -->
+  <section class="recommended">
+    <h2>También te puede interesar</h2>
+    <div class="reco-grid">
+      <div class="reco-card">
+        <div class="reco-photo"><img src="./img/BEIGE-1-690e5acc05bb7.webp" alt="Producto recomendado 1"></div>
+        <div class="reco-name">JOGGS Cargo Beige</div>
+        <div class="reco-price">$24.999 <span>$34.999</span></div>
+      </div>
+      <div class="reco-card">
+        <div class="reco-photo"><img src="./img/GREEN-1-690e5d7769694.webp" alt="Producto recomendado 2"></div>
+        <div class="reco-name">JOGGS Baggy Cargo Verde</div>
+        <div class="reco-price">$16.000 <span>$27.000</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="whatsapp">
+    <span class="wa-icon">🟢</span> ¿Necesitás ayuda? Hablá con nosotros
+  </div>
+
+  <div class="cookie-bar">
+    <span>Al navegar por este sitio aceptás el uso de cookies para agilizar tu experiencia de compra.</span>
+    <button>Entiendo</button>
+  </div>
+
+  <script src="producto.js"></script>
+</body>
+</html>
